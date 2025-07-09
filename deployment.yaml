@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: ecommerce-app
-        image: rakeshperal04/my-app:latest
+        image: rakeshperal04/cicd:latest
         ports:
         - containerPort: 5000
