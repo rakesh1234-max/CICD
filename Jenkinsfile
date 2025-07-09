@@ -14,13 +14,13 @@ pipeline {
             }
         }
 
-        stage('Build Docker Image') {
-    steps {
-        script {
-            sh "DOCKER_BUILDKIT=1 docker build -t ${DOCKER_IMAGE} ."
+   stage('Build Docker Image') {
+            steps {
+                script {
+                    docker.build(DOCKER_IMAGE)
+                }
+            }
         }
-    }
-}
 
         stage('Push to Docker Hub') {
             steps {
