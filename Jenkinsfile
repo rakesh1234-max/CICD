@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'rakeshperal04/my-app'
+        DOCKER_IMAGE = 'rakeshperal04/cicd'
         AWS_REGION = 'us-east-1'
         CLUSTER_NAME = 'ecommerce-cluster'
     }
